@@ -1,8 +1,7 @@
 class NoteRepository {
-  // Simulasi database lokal sementara
   final List<Map<String, dynamic>> _notes = [];
 
-  Future<List<Map<String, dynamic>>> getNotes() async {
+  Future<List<Map<String, dynamic>>> fetchNotes() async {
     await Future.delayed(const Duration(milliseconds: 500)); // simulasi loading
     return List<Map<String, dynamic>>.from(_notes);
   }

@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../repository/note_repository.dart';
-import '../add_note/add_note_bloc.dart';
-import '../note_list/note_list_event.dart';
-import '../note_list/note_list_bloc.dart';
-import '../add_note/add_note_event.dart';
-import '../note_list/note_list_state.dart';
-import '../update_note/update_note_bloc.dart';
-import '../update_note/update_note_event.dart';
-import '../selection/selection_bloc.dart';
+
+// arahkan semua import ke dalam folder BLoC
+import 'BLoC/repository/note_repository.dart';
+import 'BLoC/add_note/add_note_bloc.dart';
+import 'BLoC/add_note/add_note_event.dart';
+import 'BLoC/note_list/note_list_bloc.dart';
+import 'BLoC/note_list/note_list_event.dart';
+import 'BLoC/note_list/note_list_state.dart';
+import 'BLoC/update_note/update_note_bloc.dart';
+import 'BLoC/update_note/update_note_event.dart';
+import 'BLoC/selection/selection_bloc.dart';
 
 void main() {
   final noteRepository = NoteRepository();
